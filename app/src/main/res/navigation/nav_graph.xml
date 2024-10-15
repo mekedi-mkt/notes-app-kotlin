@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment3">
+
+    <fragment
+        android:id="@+id/homeFragment3"
+        android:name="com.mekedi_mkt.notes_app_kotlin.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment3_to_addNoteFragment3"
+            app:destination="@id/addNoteFragment3" />
+        <action
+            android:id="@+id/action_homeFragment3_to_editNoteFragment2"
+            app:destination="@id/editNoteFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment3"
+        android:name="com.mekedi_mkt.notes_app_kotlin.fragments.AddNoteFragment"
+        android:label="AddNoteFragment" >
+        <action
+            android:id="@+id/action_addNoteFragment3_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNoteFragment2"
+        android:name="com.mekedi_mkt.notes_app_kotlin.fragments.EditNoteFragment"
+        android:label="EditNoteFragment" >
+        <action
+            android:id="@+id/action_editNoteFragment2_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+    </fragment>
+</navigation>
