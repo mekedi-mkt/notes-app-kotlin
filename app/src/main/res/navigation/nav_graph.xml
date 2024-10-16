@@ -30,5 +30,10 @@
         <action
             android:id="@+id/action_editNoteFragment2_to_homeFragment3"
             app:destination="@id/homeFragment3" />
+
+        <argument
+            android:name="note"
+            app:argType="com.mekedi_mkt.notes_app_kotlin.model.Note"
+            app:nullable="true" />
     </fragment>
 </navigation>
