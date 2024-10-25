@@ -41,7 +41,7 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
         holder.itemBinding.noteDesc.text = currentNote.description
 
         holder.itemView.setOnClickListener {
-            val direction = HomeFragmentDirections.actionHomeFragment3ToEditNoteFragment2(currentNote)
+            val direction = HomeFragmentDirections.actionHomeFragmentToEditNoteFragment(currentNote)
             it.findNavController().navigate(direction)
         }
     }
