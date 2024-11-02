@@ -1,10 +1,10 @@
-package com.mekedi_mkt.notes_app_kotlin.database
+package com.mekedi_mkt.notes_app_kotlin.model.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.mekedi_mkt.notes_app_kotlin.model.Note
+import com.mekedi_mkt.notes_app_kotlin.model.entities.Note
 
 @Database(entities = [Note::class], version = 1)
 abstract class NoteDatabase : RoomDatabase() {

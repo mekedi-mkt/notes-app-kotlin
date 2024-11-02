@@ -1,4 +1,4 @@
-package com.mekedi_mkt.notes_app_kotlin.fragments
+package com.mekedi_mkt.notes_app_kotlin.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -15,9 +15,9 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.mekedi_mkt.notes_app_kotlin.MainActivity
 import com.mekedi_mkt.notes_app_kotlin.R
-import com.mekedi_mkt.notes_app_kotlin.adapter.NoteAdapter
+import com.mekedi_mkt.notes_app_kotlin.view.adapter.NoteAdapter
 import com.mekedi_mkt.notes_app_kotlin.databinding.FragmentHomeBinding
-import com.mekedi_mkt.notes_app_kotlin.model.Note
+import com.mekedi_mkt.notes_app_kotlin.model.entities.Note
 import com.mekedi_mkt.notes_app_kotlin.viewmodel.NoteViewModel
 
 class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextListener, MenuProvider {

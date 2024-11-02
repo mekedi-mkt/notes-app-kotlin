@@ -3,8 +3,8 @@ package com.mekedi_mkt.notes_app_kotlin.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.mekedi_mkt.notes_app_kotlin.model.Note
-import com.mekedi_mkt.notes_app_kotlin.repository.NoteRepository
+import com.mekedi_mkt.notes_app_kotlin.model.entities.Note
+import com.mekedi_mkt.notes_app_kotlin.model.repository.NoteRepository
 import kotlinx.coroutines.launch
 
 class NoteViewModel(app: Application, private val noteRepository: NoteRepository) :

@@ -1,4 +1,4 @@
-package com.mekedi_mkt.notes_app_kotlin.fragments
+package com.mekedi_mkt.notes_app_kotlin.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -17,7 +17,7 @@ import androidx.navigation.fragment.navArgs
 import com.mekedi_mkt.notes_app_kotlin.MainActivity
 import com.mekedi_mkt.notes_app_kotlin.R
 import com.mekedi_mkt.notes_app_kotlin.databinding.FragmentEditNoteBinding
-import com.mekedi_mkt.notes_app_kotlin.model.Note
+import com.mekedi_mkt.notes_app_kotlin.model.entities.Note
 import com.mekedi_mkt.notes_app_kotlin.viewmodel.NoteViewModel
 
 class EditNoteFragment : Fragment(R.layout.fragment_edit_note), MenuProvider {

@@ -3,7 +3,7 @@ package com.mekedi_mkt.notes_app_kotlin.viewmodel
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.mekedi_mkt.notes_app_kotlin.repository.NoteRepository
+import com.mekedi_mkt.notes_app_kotlin.model.repository.NoteRepository
 
 class NoteViewModelFactory(val app: Application, private val noteRepository: NoteRepository) :
     ViewModelProvider.Factory {

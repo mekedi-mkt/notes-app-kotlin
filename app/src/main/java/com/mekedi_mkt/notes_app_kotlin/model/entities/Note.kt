@@ -1,4 +1,4 @@
-package com.mekedi_mkt.notes_app_kotlin.model
+package com.mekedi_mkt.notes_app_kotlin.model.entities
 
 import android.os.Parcelable
 import androidx.room.Entity

@@ -1,4 +1,4 @@
-package com.mekedi_mkt.notes_app_kotlin.database
+package com.mekedi_mkt.notes_app_kotlin.model.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -7,7 +7,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import com.mekedi_mkt.notes_app_kotlin.model.Note
+import com.mekedi_mkt.notes_app_kotlin.model.entities.Note
 
 @Dao
 interface NoteDao {

@@ -1,14 +1,10 @@
 package com.mekedi_mkt.notes_app_kotlin
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
-import com.mekedi_mkt.notes_app_kotlin.database.NoteDatabase
-import com.mekedi_mkt.notes_app_kotlin.model.Note
-import com.mekedi_mkt.notes_app_kotlin.repository.NoteRepository
+import com.mekedi_mkt.notes_app_kotlin.model.database.NoteDatabase
+import com.mekedi_mkt.notes_app_kotlin.model.repository.NoteRepository
 import com.mekedi_mkt.notes_app_kotlin.viewmodel.NoteViewModel
 import com.mekedi_mkt.notes_app_kotlin.viewmodel.NoteViewModelFactory
 

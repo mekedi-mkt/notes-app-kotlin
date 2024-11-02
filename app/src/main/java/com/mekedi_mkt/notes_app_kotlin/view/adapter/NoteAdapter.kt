@@ -1,4 +1,4 @@
-package com.mekedi_mkt.notes_app_kotlin.adapter
+package com.mekedi_mkt.notes_app_kotlin.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.mekedi_mkt.notes_app_kotlin.databinding.NoteLayoutBinding
-import com.mekedi_mkt.notes_app_kotlin.fragments.HomeFragmentDirections
-import com.mekedi_mkt.notes_app_kotlin.model.Note
+import com.mekedi_mkt.notes_app_kotlin.model.entities.Note
+import com.mekedi_mkt.notes_app_kotlin.view.fragments.HomeFragmentDirections
 
 class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
 
@@ -28,13 +28,13 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
     }
     val differ = AsyncListDiffer(this, differCallback)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteAdapter.NoteViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         return NoteViewHolder(
             NoteLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
     }
 
-    override fun onBindViewHolder(holder: NoteAdapter.NoteViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         val currentNote= differ.currentList[position]
 
         holder.itemBinding.noteTitle.text = currentNote.title

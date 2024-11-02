@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.mekedi_mkt.notes_app_kotlin.fragments.HomeFragment"
+        android:name="com.mekedi_mkt.notes_app_kotlin.view.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/addNoteFragment"
-        android:name="com.mekedi_mkt.notes_app_kotlin.fragments.AddNoteFragment"
+        android:name="com.mekedi_mkt.notes_app_kotlin.view.fragments.AddNoteFragment"
         android:label="fragment_add_note"
         tools:layout="@layout/fragment_add_note" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/editNoteFragment"
-        android:name="com.mekedi_mkt.notes_app_kotlin.fragments.EditNoteFragment"
+        android:name="com.mekedi_mkt.notes_app_kotlin.view.fragments.EditNoteFragment"
         android:label="fragment_edit_note"
         tools:layout="@layout/fragment_edit_note" >
         <action
@@ -36,7 +36,7 @@
             app:destination="@id/homeFragment" />
         <argument
             android:name="note"
-            app:argType="com.mekedi_mkt.notes_app_kotlin.model.Note"
+            app:argType="com.mekedi_mkt.notes_app_kotlin.model.entities.Note"
             app:nullable="true" />
     </fragment>
 </navigation>
